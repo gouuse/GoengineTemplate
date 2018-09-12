@@ -8,9 +8,12 @@
     <#include "../common/recipe_simple.xml.ftl" />
     <open file="${escapeXmlAttribute(resOut)}/layout/${layoutName}.xml" />
 </#if>
-
-    <instantiate from="root/src/app_package/SimpleActivity.${ktOrJavaExt}.ftl"
+ <instantiate from="root/src/app_package/SimpleActivity.${ktOrJavaExt}.ftl"
                    to="${escapeXmlAttribute(srcOut)}/${activityClass}.${ktOrJavaExt}" />
+ <instantiate from="root/src/app_package/SimpleView.${ktOrJavaExt}.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/${viewClass}.${ktOrJavaExt}" />
+    <instantiate from="root/src/app_package/SimplePresenter.${ktOrJavaExt}.ftl"
+                   to="${escapeXmlAttribute(srcOut)}/${pesenterClass}.${ktOrJavaExt}" />
     <open file="${escapeXmlAttribute(srcOut)}/${activityClass}.${ktOrJavaExt}" />
 
 </recipe>

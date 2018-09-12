@@ -2,10 +2,10 @@
 <template
     format="5"
     revision="5"
-    name="Empty Activity"
+    name="Mvp Activity"
     minApi="9"
     minBuildApi="14"
-    description="Creates a new empty activity">
+    description="Creates a new mvp activity">
 
     <category value="Activity" />
     <formfactor value="Mobile" />
@@ -17,8 +17,21 @@
         constraints="class|unique|nonempty"
         suggest="${layoutToActivity(layoutName)}"
         default="MainActivity"
-        help="The name of the activity class to create" />
-
+        help="Activity类名" />
+   <parameter
+        id="viewClass"
+        name="View Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="MainView"
+        help="View类名" />
+    <parameter
+        id="pesenterClass"
+        name="Pesenter Name"
+        type="string"
+        constraints="class|unique|nonempty"
+        default="MainActivityPesenter"
+        help="Pesenter类名" />
     <parameter
         id="generateLayout"
         name="Generate Layout File"
@@ -88,7 +101,7 @@
         <option id="pathPattern">Path Pattern</option>
     </parameter>
 
-    <parameter
+`    <parameter
         id="instantAppActivityRoute"
         name="Instant App URL Route"
         type="string"
