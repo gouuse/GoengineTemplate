@@ -7,7 +7,7 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.${layoutName}.*
 </#if>
 
-class ${activityClass} : BaseActivity<${pesenterClass}>() :${viewClass} {
+class ${activityClass} : BaseActivity<${pesenterClass}>() , ${viewClass} {
 
     override fun initVariables() {
 
