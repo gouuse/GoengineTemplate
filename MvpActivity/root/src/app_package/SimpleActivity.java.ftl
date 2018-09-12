@@ -38,5 +38,4 @@ public class ${activityClass} extends CrmBaseActivity<${pesenterClass}> implemen
 
     }
 
-<#include "../../../../common/jni_code_snippet.java.ftl">
 }

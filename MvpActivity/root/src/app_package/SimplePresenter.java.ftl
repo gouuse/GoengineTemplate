@@ -8,5 +8,4 @@ public class ${pesenterClass} extends BasePresenter<${viewClass}> {
     public ${pesenterClass}(${viewClass} view) {
         super(view);
     }
-    <#include "../../../../common/jni_code_snippet.java.ftl">
 }

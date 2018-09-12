@@ -29,5 +29,4 @@ class ${activityClass} : CrmBaseActivity<${pesenterClass}>() , ${viewClass} {
     override fun showMessage(message: String) {
 
     }
-<#include "../../../../common/jni_code_snippet.kt.ftl">
 }

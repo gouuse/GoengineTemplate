@@ -5,7 +5,7 @@
     <@kt.addAllKotlinDependencies />
 
 <#if generateLayout>
-    <#include "../common/recipe_simple.xml.ftl" />
+    <#include "recipe_simple.xml.ftl" />
     <open file="${escapeXmlAttribute(resOut)}/layout/${layoutName}.xml" />
 </#if>
  <instantiate from="root/src/app_package/SimpleActivity.${ktOrJavaExt}.ftl"
