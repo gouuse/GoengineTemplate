@@ -30,7 +30,7 @@
         name="Pesenter Name"
         type="string"
         constraints="class|unique|nonempty"
-        default="MainActivityPesenter"
+        default="MainActivityPresenter"
         help="Pesenter类名" />
     <parameter
         id="generateLayout"
